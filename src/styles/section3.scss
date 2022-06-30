@@ -1,0 +1,49 @@
+.advantages-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $gutter-default;
+}
+
+.advantages-title {
+  @include fontz('GTEesti', 400, 32px, normal);
+  color: $colorB-base;
+  text-align: center;
+}
+
+.advantages-subTitle {
+  @include fontz('GTEesti', 300, 18px, normal);
+  color: $colorB-two;
+  max-width: 900px;
+  text-align: center;
+}
+
+.benefits-list {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.benefits-item__img {
+  width: 40px;
+  height: 40px;
+}
+
+.benefits-item__title {
+  color: $colorB-base;
+  @include fontz('GTEesti', 300, 16px, normal)
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.benefits-btn {
+  margin-top: $gutter-default;
+  @extend %button-filled;
+}

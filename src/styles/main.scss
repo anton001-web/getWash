@@ -5,6 +5,7 @@
 @import 'header';
 @import 'section1';
 @import 'section2';
+@import 'section3';
 
 .section {
   margin-top: $section-m;
@@ -27,3 +28,4 @@ body {
 @import './media/header-media';
 @import './media/section1-media';
 @import './media/section2-media';
+@import './media/section3-media';
