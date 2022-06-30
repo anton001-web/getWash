@@ -1,0 +1,38 @@
+.header {
+
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $gutter-default;
+}
+
+.header-logo {
+  color: $color-blue;
+  @include fontz('GTEesti', bold, 28px, normal);
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0px;
+}
+
+.header-list__item {
+  list-style: none;
+  @include fontz('GTEesti', 300, 18px, normal);
+  color: $colorB-two;
+  &[data-m] {
+    margin-right: $gutter-default;
+  }
+}
+
+.header-btn {
+  background-color: #fff;
+  border: none;
+  color: $color-blue;
+  @include fontz('GTEesti', 400, 16px, normal);
+}
