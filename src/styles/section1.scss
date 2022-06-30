@@ -1,0 +1,42 @@
+.title-section {
+
+}
+
+.title-section__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: $gutter-default;
+}
+
+.title-section__info-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-info-block__title {
+  @include fontz('GTEesti', 400, 40px, normal);
+  color: $colorB-base;
+}
+
+.title-info-block__subTitle {
+  @include fontz('GTEesti', 300, 24px, normal);
+  color: $colorB-two;
+}
+
+.title-info-block_btn {
+  margin-top: $gutter-default;
+  @extend %button-filled;
+}
+
+.title-section__img-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.title-section__img {
+  object-fit: cover;
+  width: 100%;
+}

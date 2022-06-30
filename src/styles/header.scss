@@ -44,10 +44,7 @@
 }
 
 .btn-filled {
-  background-color: $color-blue;
-  color: #fff;
-  border-radius: 6px;
-  padding: 20px 40px;
+  @extend %button-filled;
   margin-bottom: 50px;
 }
 

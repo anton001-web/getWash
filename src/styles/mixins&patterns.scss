@@ -4,3 +4,12 @@
   font-size: $fs;
   font-style: $fst;
 }
+
+%button-filled {
+  background-color: $color-blue;
+  color: #fff;
+  border-radius: 6px;
+  padding: 20px 40px;
+  border: none;
+  @include fontz('GTEesti', 400, 16px, normal);
+}

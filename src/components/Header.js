@@ -15,9 +15,11 @@ const Header = () => {
 
     useEffect(() => {
         if(visible) {
+            document.body.style.overflow = 'hidden'
             menuRef.current.style.left = '0'
             btnBurger.current.classList.add('active')
         } else {
+            document.body.style.overflow = 'scroll'
             menuRef.current.style.left = '-120%'
             btnBurger.current.classList.remove('active')
         }
@@ -38,7 +40,7 @@ const Header = () => {
                             <li className='header-list__item' data-m>Партнерам</li>
                             <li className='header-list__item' data-m>Скачать</li>
                             <li className='header-list__item'>Отзывы</li>
-                            <button className='header-burger__btn btn-filled burger-hidden'>Получить доступ</button>
+                            <button className='btn-filled burger-hidden'>Получить доступ</button>
                             <button className='header-burger__btn  burger-hidden'>Стать партнером</button>
                         </ul>
                     </div>

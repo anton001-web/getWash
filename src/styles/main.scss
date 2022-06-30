@@ -2,7 +2,13 @@
 @import './vars';
 @import './mixins&patterns';
 
-@import 'header.scss';
+@import 'header';
+@import 'section1';
+@import 'section2';
+
+.section {
+  margin-top: $section-m;
+}
 
 .container {
   max-width: $container-width;
@@ -19,3 +25,5 @@ body {
 }
 
 @import './media/header-media';
+@import './media/section1-media';
+@import './media/section2-media';

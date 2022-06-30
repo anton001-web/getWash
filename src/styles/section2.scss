@@ -1,0 +1,61 @@
+
+
+.steps-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: $gutter-default;
+  padding: $gutter-default;
+}
+
+.steps-image__block {
+  background-image: url("../assets/images/iphoneBgMap.png");
+  background-size: cover;
+  background-position: center -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 70%;
+    object-fit: cover;
+  }
+}
+
+.steps-sec-info__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps-title {
+  color: $colorB-base;
+  @include fontz('GTEesti', 400, 40px, normal);
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.step-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-item__img {
+  margin-right: $gutter-default;
+  width: 40px;
+  height: 40px;
+}
+
+.step-item__title {
+  color: $colorB-base;
+  @include fontz('GTEesti', 400, 24px, normal)
+}
+
+.step-item__subTitle {
+  color: $colorB-two;
+  @include fontz('GTEesti', 300, 18px, normal);
+}
