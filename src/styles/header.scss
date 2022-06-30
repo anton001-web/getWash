@@ -1,5 +1,4 @@
 .header {
-
 }
 
 .header-content {
@@ -19,7 +18,6 @@
   justify-content: center;
   align-items: center;
   padding-inline-start: 0px;
-  // he
 }
 
 .header-list__item {
@@ -36,4 +34,57 @@
   border: none;
   color: $color-blue;
   @include fontz('GTEesti', 400, 16px, normal);
+}
+
+.header-burger__btn {
+  color: $color-blue;
+  background-color: #fff;
+  border: none;
+  @include fontz('GTEesti', 400, 16px, normal);
+}
+
+.btn-filled {
+  background-color: $color-blue;
+  color: #fff;
+  border-radius: 6px;
+  padding: 20px 40px;
+  margin-bottom: 50px;
+}
+
+.burger-hidden {
+  display: none;
+}
+
+.burger-toggle {
+  border: 0;
+  background-color: #fff;
+  display: none;
+
+  span {
+    transition: all .4s;
+    height: 2px;
+    width: 24px;
+    background-color: #000;
+    display: block;
+    margin: 7px;
+  }
+}
+
+.header-list__block {
+  transition: all .4s;
+}
+
+.active {
+  margin-bottom: 8px;
+
+  .bar:nth-child(3) {
+    display: none;
+  }
+  .bar:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+
+  }
+  .bar:nth-child(2) {
+    transform: rotate(45deg);
+  }
 }

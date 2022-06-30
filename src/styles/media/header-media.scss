@@ -1,3 +1,42 @@
 @media screen and (max-width: 767px) {
+  .header-list__block {
+    background-color: #fff;
+    position: absolute;
+    height: calc(100% - 110px);
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    left: -120%;
+    bottom: 0;
+  }
 
+  .header-list {
+    flex-direction: column;
+    align-items: start;
+    margin: $gutter-default;
+
+    .header-list__item {
+      margin-bottom: 60px;
+      margin-right: 0;
+    }
+  }
+
+  .burger-hidden {
+    display: block;
+  }
+  
+  .header-btn {
+    display: none;
+  }
+
+  .burger-toggle {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .header-list {
+    align-items: center;
+  }
 }
