@@ -85,3 +85,10 @@
     transform: rotate(45deg);
   }
 }
+
+.burger-header {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  margin-bottom: $gutter-default;
+}

@@ -1,13 +1,17 @@
 @media screen and (max-width: 767px) {
+  .burger-header {
+    display: flex;
+  }
+
   .header-list__block {
     background-color: #fff;
-    position: absolute;
-    height: calc(100% - 110px);
+    position: fixed;
+    height: 100%;
     width: 100%;
     flex-direction: column;
     align-items: start;
     left: -120%;
-    bottom: 0;
+    top: 0;
     z-index: 9999;
   }
 
