@@ -1,0 +1,84 @@
+.review-content {
+  display: flex;
+  flex-direction: column;
+  padding: $gutter-default;
+}
+
+.review-header {
+  display: flex;
+}
+
+.review-info {
+  max-width: 60%;
+}
+
+.review-title {
+  color: $colorB-base;
+  @include fontz('GTEesti', 400, 40px, normal);
+}
+
+.review-subTitle {
+  color: $colorB-two;
+  @include fontz('GTEesti', 300, 18px, normal);
+}
+
+.slider-controls {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+}
+
+.slider-control {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+}
+
+.slider-control {
+  cursor: pointer;
+}
+
+.review-slider {
+
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: $gutter-default;
+  }
+}
+
+.slide-title {
+  color: $colorB-base;
+  @include fontz('GTEesti', 400, 24px, normal);
+}
+
+.slide-subTitle {
+  color: $colorB-two;
+  @include fontz('GTEesti', 300, 18px, normal);
+}
+
+.slide-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider-controls__hidden {
+  display: none;
+}
+
+.chevron-next {
+  transform: rotate(180deg);
+}

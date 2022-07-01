@@ -1,0 +1,28 @@
+@media screen and (max-width: 767px) {
+  .review-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slider-controls {
+    display: block;
+    width: auto;
+  }
+
+  .review-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .slider-controls__hidden {
+    margin-top: $gutter-default;
+    display: block;
+  }
+
+  .slider-controls {
+    display: none;
+  }
+}
