@@ -14,7 +14,7 @@ const Section5 = () => {
     const nextSlide = () => setCurrent(current === slides - 1 ? 0 : current + 1)
 
     return (
-        <section className='section review-section'>
+        <section className='section review-section' id='review'>
             <div className='container'>
                 <div className='review-content'>
                     <div className='review-header'>

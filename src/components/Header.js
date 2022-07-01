@@ -34,9 +34,11 @@ const Header = () => {
 
     useEffect(() => {
         if(visible) {
+            document.body.style.overflow = 'hidden'
             menuRef.current.style.left = '0'
             btnBurger.current.classList.add('active')
         } else {
+            document.body.style.overflow = 'scroll'
             menuRef.current.style.left = '-120%'
             btnBurger.current.classList.remove('active')
         }
@@ -62,10 +64,10 @@ const Header = () => {
                                     <span className='bar'></span>
                                 </button>
                             </div>
-                            <li className='header-list__item' data-m>Как использовать</li>
-                            <li className='header-list__item' data-m>Партнерам</li>
-                            <li className='header-list__item' data-m>Скачать</li>
-                            <li className='header-list__item'>Отзывы</li>
+                            <li className='header-list__item' data-m><a href="#steps" className='list-item__link'>Как использовать</a></li>
+                            <li className='header-list__item' data-m><a href="#advantages" className='list-item__link'>Партнерам</a></li>
+                            <li className='header-list__item' data-m><a href="#app" className='list-item__link'>Скачать</a></li>
+                            <li className='header-list__item'><a href="#review" className='list-item__link'>Отзывы</a></li>
                             <button className='btn-filled burger-hidden'>Получить доступ</button>
                             <button className='header-burger__btn  burger-hidden'>Стать партнером</button>
                         </ul>

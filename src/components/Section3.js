@@ -33,7 +33,7 @@ const Section3 = () => {
     }
 
     return (
-        <section className='section advantages-section'>
+        <section className='section advantages-section' id='advantages'>
             <div className='container'>
                 <div className='advantages-content'>
                     <Modal ref={sec3Modal} toggle={modalToggle}/>

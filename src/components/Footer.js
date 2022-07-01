@@ -31,10 +31,10 @@ const Footer = () => {
                     <Modal ref={footerModal} toggle={modalHandle} />
                     <h1 className='footer-logo'>GetWash</h1>
                     <ul className='footer-list'>
-                        <li className='list-item' data-mar><a className='footer-link' href="">Как использовать</a></li>
-                        <li className='list-item' data-mar><a className='footer-link' href="">Партнерам</a></li>
-                        <li className='list-item' data-mar><a className='footer-link' href="">Скачать</a></li>
-                        <li className='list-item' data-mar><a className='footer-link' href="">Отзывы</a></li>
+                        <li className='list-item' data-mar><a className='footer-link' href="#steps">Как использовать</a></li>
+                        <li className='list-item' data-mar><a className='footer-link' href="#advantages">Партнерам</a></li>
+                        <li className='list-item' data-mar><a className='footer-link' href="#app">Скачать</a></li>
+                        <li className='list-item' data-mar><a className='footer-link' href="#review">Отзывы</a></li>
                     </ul>
                     <button className='footer-btn' onClick={modalHandle}>
                         Получить доступ

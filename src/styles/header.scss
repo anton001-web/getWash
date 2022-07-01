@@ -22,8 +22,6 @@
 
 .header-list__item {
   list-style: none;
-  @include fontz('GTEesti', 300, 18px, normal);
-  color: $colorB-two;
   &[data-m] {
     margin-right: $gutter-default;
   }
@@ -92,4 +90,10 @@
   display: none;
   justify-content: space-between;
   margin-bottom: $gutter-default;
+}
+
+.list-item__link {
+  color: $colorB-two;
+  @include fontz('GTEesti', 18px, 300, normal);
+  text-decoration: none;
 }

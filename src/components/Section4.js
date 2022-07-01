@@ -9,7 +9,7 @@ const Section4 = () => {
     const [tablet] = useMatchMedia(queries)
 
     return (
-        <section className='section app-section'>
+        <section className='section app-section' id='app'>
             <div className='container'>
                 <div className='app-content'>
                     <div className="app-content__info">

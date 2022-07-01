@@ -9,7 +9,7 @@ const steps = [
 
 const Section2 = () => {
     return (
-        <section className='section steps-section'>
+        <section className='section steps-section' id='steps'>
             <div className='container'>
                 <div className='steps-content'>
                     <div className='steps-image__block'>
