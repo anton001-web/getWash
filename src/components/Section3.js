@@ -1,4 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import {useDispatch, useSelector} from "react-redux";
+import {toggleModal} from "../redux/actions";
+import {Modal} from "./Modal";
 
 const benefits = [
     {img: './assets/images/Document.png', title: 'Просмотривайте историю заказа'},
@@ -9,10 +12,31 @@ const benefits = [
 ]
 
 const Section3 = () => {
+    const dispatch = useDispatch()
+    const sec3Modal = React.createRef()
+
+    const {visibility} = useSelector(store => {
+        const {modal} = store
+        return modal
+    })
+
+    useEffect(() => {
+        if(visibility) {
+            sec3Modal.current.classList.add('active')
+        } else {
+            sec3Modal.current.classList.remove('active')
+        }
+    }, [visibility])
+
+    const modalToggle = () => {
+        dispatch(toggleModal())
+    }
+
     return (
         <section className='section advantages-section'>
             <div className='container'>
                 <div className='advantages-content'>
+                    <Modal ref={sec3Modal} toggle={modalToggle}/>
                     <h1 className='advantages-title'>Стань нашим партнером и начни зарабатывать:</h1>
                     <p className='advantages-subTitle'>
                         Автоматизируй свой бизнес вместе с нами. Подключись к нашей системе бронирования, что бы получать новых клиентов и распределить нагрузку равномерно на весь день. Мы предоставляем удобные инструменты для формирования отчетов в несколько кликов и многое другое.
@@ -27,7 +51,7 @@ const Section3 = () => {
                             ))
                         }
                     </div>
-                    <button className='benefits-btn'>Стать партнером</button>
+                    <button className='benefits-btn' onClick={modalToggle}>Стать партнером</button>
                 </div>
             </div>
         </section>

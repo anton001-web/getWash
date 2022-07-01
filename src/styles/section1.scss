@@ -27,6 +27,7 @@
 .title-info-block_btn {
   margin-top: $gutter-default;
   @extend %button-filled;
+  cursor: pointer;
 }
 
 .title-section__img-block {

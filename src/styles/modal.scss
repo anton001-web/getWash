@@ -1,0 +1,116 @@
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 40%);
+  padding: $gutter-default;
+  transition: all .4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.active {
+  margin-bottom: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 350px;
+}
+
+.modal-close__block {
+  display: flex;
+  justify-content: end;
+}
+
+.modal-close {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  color: $colorB-two;
+  margin: 10px 10px 0px 0px;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: $gutter-default;
+}
+
+.modal-title {
+  color: $colorB-base;
+  @include fontz('GTEesti', 400, 21px, normal);
+}
+
+
+.field_block {
+  margin-bottom: $gutter-default;
+  display: flex;
+  border: 1px solid #E9ECF5;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.field_icon {
+  padding: 10px;
+}
+
+.modal-field__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.field {
+  border: none;
+  width: 100%;
+  padding-left: $gutter-default;
+  color: #C0C0C0;
+  @include fontz('GTEesti', 300, 14px, normal)
+}
+
+.additional-opt {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.checkbox {
+  margin-right: 12px;
+}
+
+.checkbox-title {
+  color: $colorB-two;
+  @include fontz('GTEesti', 300, 13px, normal)
+}
+
+.modal-btn {
+  margin-top: 40px;
+  @extend %button-filled;
+  cursor: pointer;
+}
+
+.modal-footer__text {
+  margin-top: $gutter-default;
+  color: $colorB-two;
+  @include fontz('GTEesti', 300, 13px, normal);
+
+  a {
+    color: $color-blue;
+  }
+}

@@ -44,6 +44,7 @@
 }
 
 .benefits-btn {
+  cursor: pointer;
   margin-top: $gutter-default;
   @extend %button-filled;
 }
