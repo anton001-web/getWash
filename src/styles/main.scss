@@ -8,6 +8,7 @@
 @import 'section3.scss';
 @import 'section4.scss';
 @import 'section5.scss';
+@import 'footer.scss';
 
 .section {
   margin-top: $section-m;
@@ -33,3 +34,4 @@ body {
 @import './media/section3-media.scss';
 @import './media/section4-media.scss';
 @import './media/section5-media.scss';
+@import './media/footer-media.scss';

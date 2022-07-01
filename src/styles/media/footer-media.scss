@@ -1,0 +1,18 @@
+@media screen and (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    text-align: center;
+
+    li[data-mar] {
+      margin-right: 0px;
+    }
+  }
+
+  .list-item {
+    margin-bottom: $gutter-default;
+  }
+}

@@ -23,13 +23,8 @@ const Section4 = () => {
                         </div>
                     </div>
                     <div className='images-block'>
-                        <div className='img-one__block ipsBlock'>
-                            <img className='ipOne ipImg' src="./assets/images/iPhone12mockup31.png" alt=""/>
-                        </div>
-                        <div className='img-two__block ipsBlock'>
-                            {
-                                tablet ?  <img className='ip-img__tablet' src="./assets/images/iPhone12mockup41.png" alt=""/> : <img className='ipTwo ipImg' src="./assets/images/image.png" alt=""/>
-                            }
+                        <div className=' ipsBlock'>
+                            <img src="./assets/images/ipsGroup.png" className='ipsGroup'/>
                         </div>
                     </div>
                 </div>

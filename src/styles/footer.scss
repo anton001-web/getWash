@@ -1,0 +1,43 @@
+.footer {
+  background-color: $colorB-base;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $gutter-default;
+}
+
+.footer-logo {
+  color: #fff;
+  @include fontz('GTEesti', 28px, bold, normal);
+}
+
+.footer-list {
+  padding-inline-start: 0px;
+  display: flex;
+
+  li[data-mar] {
+    margin-right: $gutter-default;
+  }
+}
+
+.list-item {
+  list-style: none;
+}
+
+.footer-link {
+  color: #E9ECF5;
+  @include fontz('GTEesti', 18px, 300, normal);
+  text-decoration: none;
+}
+
+.footer-btn {
+  color: #E9ECF5;
+  @include fontz('GTEesti', 16px, 300, normal);
+  background-color: inherit;
+  border: 1px solid #72727E;
+  border-radius: 6px;
+  padding: 10px 30px;
+}
