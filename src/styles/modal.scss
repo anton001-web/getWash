@@ -56,6 +56,8 @@
 .modal-title {
   color: $colorB-base;
   @include fontz('GTEesti', 400, 21px, normal);
+  margin-block-start: 0em;
+  margin-block-end: 1.5em;
 }
 
 
@@ -114,3 +116,4 @@
     color: $color-blue;
   }
 }
+

@@ -38,7 +38,7 @@ const Header = () => {
             menuRef.current.style.left = '0'
             btnBurger.current.classList.add('active')
         } else {
-            document.body.style.overflow = 'scroll'
+            document.body.style.overflow = 'visible'
             menuRef.current.style.left = '-120%'
             btnBurger.current.classList.remove('active')
         }
@@ -52,7 +52,7 @@ const Header = () => {
         <header className='header'>
             <div className='container'>
                 <div className='header-content'>
-                    <Modal ref={headerModal} toggle={() => modalToggle}/>
+                        <Modal ref={headerModal} toggle={() => modalToggle}/>
                     <h1 className='header-logo'>GetWash</h1>
                     <div className='header-list__block' ref={menuRef}>
                         <ul className='header-list'>
