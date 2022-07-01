@@ -1,0 +1,80 @@
+.app-content {
+  background-color: $color-blue;
+  border-radius: 20px;
+}
+
+.app-content {
+  margin: 20px;
+  display: grid;
+  padding: 0 $gutter-default;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+.app-content__info-block {
+  max-width: 450px;
+  padding-bottom: $gutter-default;
+  padding-top: $gutter-default;
+}
+
+.app-content__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-section__title {
+  color: $colorW-main;
+  @include fontz('GTEesti', 400, 40px, normal);
+  margin-block-start: 0em;
+}
+
+.app-section__subTitle {
+  color: #E9ECF5;
+  @include fontz('GTEesti', 300, 18px, normal)
+}
+
+.app-btn {
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+.images-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.img-one__block {
+  justify-content: end;
+}
+
+.ipOne {
+  z-index: 5;
+  width: 110%;
+  object-fit: cover;
+}
+
+.ipTwo {
+  position: relative;
+  right: 250px;
+  width: 110%;
+  object-fit: cover;
+}
+
+.ipsBlock {
+  width: 110%;
+  display: flex;
+  align-items: end;
+}
+
+.ipImg {
+  height: 110%;
+}
+
+.ip-img__tablet {
+  width: 100%;
+  object-fit: cover;
+}

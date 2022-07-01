@@ -1,0 +1,58 @@
+@media screen and (max-width: 1240px) {
+  .ipTwo {
+    right: 200px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .app-btn {
+    width: 140px;
+    height: 50px;
+  }
+
+  .ipImg {
+    height: 100%;
+  }
+
+  .app-section__title {
+    font-size: 28px;
+  }
+
+  .app-section__subTitle {
+    font-size: 16px;
+  }
+
+  .ipTwo {
+    right: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .app-content {
+    grid-template-columns: 1fr;
+  }
+
+  .app-content__info-block {
+    text-align: center;
+  }
+
+  .img-one__block {
+    display: none;
+  }
+
+  .images-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ipTwo {
+    width: auto;
+    height: auto;
+    right: 0;
+  }
+
+  .ipsBlock {
+    width: auto;
+  }
+}
